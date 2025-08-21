@@ -26,7 +26,7 @@ export default function Home() {
       },
       {
         platform: "Website",
-        url: "https://alexjohnson.com",
+        url: "https://ethan-frontend.vercel.app",
         icon: <Globe size={20} />
       }
     ]
