@@ -30,11 +30,11 @@ const MusicianCard = ({ name, university, imageUrl, bio, socialLinks }: Musician
       <div className="w-full max-w-3xl mx-auto">
         <div className="p-4 sm:p-6">
           {/* Header Section: Image, Name, and University */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row items-center sm:items-end gap-4 mb-6">
             {/* Image Section */}
             <div className="flex-shrink-0">
               <div
-                className="relative w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-2xl shadow-lg"
+                className="relative w-32 h-32 sm:w-40 sm:h-40 overflow-hidden rounded-2xl"
               >
                 <Image
                   src={imageUrl}
