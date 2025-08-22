@@ -21,7 +21,7 @@ const ContactForm = ({ isOpen, onClose, musicianName }: ContactFormProps) => {
     const formData = new FormData(e.currentTarget);
     
     try {
-      const response = await fetch('https://formsubmit.co/d5402085da8839fafc046cf2efee7286', {
+      const response = await fetch('https://formsubmit.co/ethan.j.chaparro@gmail.com', {
         method: 'POST',
         body: formData,
         headers: {
