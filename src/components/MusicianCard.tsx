@@ -2,12 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { 
-  Camera, 
-  MessageCircle, 
-  Play, 
-  Music, 
-  Globe,
-  Share2,
   Mail
 } from 'lucide-react';
 import Image from 'next/image';
@@ -33,9 +27,7 @@ const MusicianCard = ({ name, university, imageUrl, bio, socialLinks }: Musician
 
   return (
     <>
-      <div
-        className="w-full max-w-3xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-      >
+      <div className="w-full max-w-3xl mx-auto">
         <div className="p-4 sm:p-6">
           {/* Header Section: Image, Name, and University */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-6">
@@ -80,12 +72,11 @@ const MusicianCard = ({ name, university, imageUrl, bio, socialLinks }: Musician
             <div className="flex flex-col sm:grid sm:grid-cols-3 gap-3">
               {socialLinks.map((link, index) => (
                 <a
-
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center sm:justify-start space-x-3 p-4 rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-500  hover:bg-blue-50 "
+                  className="flex items-center justify-center sm:justify-start space-x-3 p-4 rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-500 hover:bg-blue-50"
                 >
                   <div className="text-gray-600 group-hover:text-blue-600 transition-colors duration-300">
                     {link.icon}
